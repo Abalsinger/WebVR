@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aframe Animations</title>
+    <meta name="description" content="First WebVR using A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-outline@%5E1.1.0/build/aframe-outline.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #222">
+     <a-entity position="0 0.5 -1"
+                text="width: 2; lineHeight: 5; letterSpacing: 5; color: yellow; value: Aframe Animation Properties"></a-entity>
+     <a-sphere position="0 0 -10" radius="1.25" color="#EF2D5E" shadow
+               animation="property: scale; dir: alternate; dur: 1000; to: 1.5 1.5 1.5; loop: true"></a-sphere>
+     <a-entity position="0 0 -1"
+                text="width: 2; lineHeight: 5; letterSpacing: 5; color: white; value: Rotation"></a-entity>
+     <a-box position="-10 0 -10" color="#EF2D5E" shadow
+               animation="property: rotation; dir: alternate; dur: 100; to: 1.5 1.5 1.5; loop: true"></a-box>
+     <a-entity position="1 0 -1"
+                text="width: 2; lineHeight: 5; letterSpacing: 5; color: white; value: Scale">
+            </a-entity> 
+     <a-sphere position="10 0 -10" radius="1.25" color="#EF2D5E" shadow
+               animation="property: position; from: 10 -5 -10; to: 10 5 -10; loop: true;"></a-sphere>
+     <a-entity position="2 0 -1"
+                text="width: 2; lineHeight: 5; letterSpacing: 5; color: white; value: Position"></a-entity>
+     <a-entity position="0 0 0"> 
+        <a-entity camera look-controls wasd-controls></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

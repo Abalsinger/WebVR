@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame 3D Primative Shapes</title>
+    <meta name="description" content="First WebVR using A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #222">
+        <a-assets>
+            <img id="sky" src="textures/NightSky.jpg">
+        </a-assets>
+        <a-sky src="#sky"></a-sky>
+        
+        <a-box src="textures/tiles.png" position="-1 0.5 -3" rotation="0 45 0" scale="2 2 2"    shadow></a-box>
+        
+        <a-sphere src="textures/ivy.png" position="0 1.25 -5" radius="1.25" shadow></a-sphere>
+        
+        <a-dodecahedron src="textures/paper.png" position="2 0.5 -4.5" radius="0.8" shadow></a-dodecahedron>
+        
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="10" color="#7BC8A4" shadow></a-plane>
+        
+      <a-entity position="0 1.8 2">
+        <a-entity camera look-controls wasd-controls></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

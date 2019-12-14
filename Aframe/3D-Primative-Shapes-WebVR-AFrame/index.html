@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame 3D Primative Shapes</title>
+    <meta name="description" content="First WebVR using A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #222">
+
+     <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+        <a-entity position="0 1 -1"text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Cube"></a-entity>   
+        
+     <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+         <a-entity position="1 2.25 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Sphere"></a-entity>
+        
+     <a-torus-knot position="0 8 -15" color="#006400" arc="90" p="2" q="7" radius="2" radius-tubular="0.1"></a-torus-knot>
+        <a-entity position="1.5 3 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Torus Knot"></a-entity>
+     
+     <a-cylinder position="4.5 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+        <a-entity position="2.5 1 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Icosahedron"></a-entity>
+    
+     <a-octahedron position="-5 1 -4" color="#990033" radius="0.8" shadow></a-octahedron>
+        <a-entity position="-2 2 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Octahedron"></a-entity>
+    
+     <a-tetrahedron position="-3 0.5 -5" color=#800080 radius="0.8" shadow></a-tetrahedron>
+        <a-entity position="-1 1.5 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Tetrahedron"></a-entity>
+        
+     <a-cone position="-3 0.5 -3" color="#336699" radius-bottom="0.8" radius-top="0" shadow></a-cone>
+        <a-entity position="-1 1 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Cone"></a-entity>
+        
+     <a-dodecahedron position="2 0.5 -4.5" color="#333399" radius="0.8" shadow></a-dodecahedron>
+        <a-entity position="1.5 1.5 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Dodechedron"></a-entity>
+     
+     <a-icosahedron position="4 0.5 -4.5" color="#FF926B" radius="0.8" shadow></a-icosahedron>
+        <a-entity position="3.5 1 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: A Cylinder"></a-entity>
+
+     <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="10" color="#7BC8A4" shadow></a-plane>
+      
+      <a-entity position="0 1.8 2">
+        <a-entity camera look-controls wasd-controls></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body> 
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="/js/arrow-key-rotation.js"></script>
+    <script src="/js/play-on-window-click.js"></script>
+    <script src="/js/play-on-vrdisplayactivate-or-enter-vr.js"></script>
+    <script src="/js/hide-once-playing.js"></script>
+     <!--Video Credit: 360 Stock VR -->
+    <a-scene>
+      <a-assets>
+        <video id="video" style="display:none" 
+               autoplay loop crossorigin="anonymous" playsinline webkit-playsinline>
+          <source type="video/mp4"
+               src="/media/sunset.mp4" />
+        </video>
+      </a-assets>
+      <a-videosphere rotation="0 180 0" src="#video" 
+                     play-on-window-click
+                     play-on-vrdisplayactivate-or-enter-vr>
+      </a-videosphere>
+      
+      <a-camera user-height="0" wasd-controls-enabled="false" arrow-key-rotation>
+        <a-entity id="msg" position="0 -0.3 -1.5" text="align:center; 
+                width:3;
+                wrapCount:100;
+                color:red;
+                value:Click window to make the video play, if needed. Video Credit: 360 Stock VR"
+                hide-once-playing="#video"> <!-- 360 Equirectangular Video-->
+        </a-entity>
+      </a-camera>        
+    </a-scene>
+  </body>
+</html>
