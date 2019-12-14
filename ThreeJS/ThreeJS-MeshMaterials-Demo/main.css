@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 100px;
+    color: #ffffff;
+    left: 200px;
+    font-size: 18px;
+}
+
+.topcenter {
+    position: absolute;
+    top: 100px;
+    color: #ffffff;
+    left: 700px;
+    font-size: 18px;
+}
+
+.topright {
+    position: absolute;
+    top: 100px;
+    color: #ffffff;
+    left: 1200px;
+    font-size: 18px;
+}
